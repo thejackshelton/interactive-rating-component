@@ -13,7 +13,7 @@ buttonRating.forEach((button) => {
         ratings.push(index);
         for (let i = 0; i < ratings.length; i++) {
             lastRating = ratings.at(-1);
-            button.classList.remove('selected')
+            // button.classList.remove('selected')
         }
     })
 })
