@@ -1,0 +1,122 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --darkBlueOpacity: hsla(213, 19%, 18%, .7);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 20rem;
+    height: 20rem;
+    padding: 1.25rem;
+    background: var(--darkBlueOpacity);
+    border-radius: 1rem;
+}
+
+.thank-you {
+    display: none;
+}
+
+.star-image {
+    width: .7rem;
+}
+
+.border-radius-wrapper {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--darkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ratings-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.ratings {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--darkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0;
+    color: var(--mediumGrey)
+}
+
+.ratings:hover {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+
+
+p {
+    color: var(--lightGrey);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.submit {
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+    transition: background-color .5s;
+}
+
+.selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
