@@ -39,13 +39,14 @@
 
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
-        <div class="ratings-wrapper">
-          <button data-rate="1" class="ratings">1</button>
-          <button data-rate="2" class="ratings">2</button>
-          <button data-rate="3" class="ratings">3</button>
-          <button data-rate="4" class="ratings">4</button>
-          <button data-rate="5" class="ratings">5</button>
-        </div>
+
+        <ul>
+          <li><button class="btn" id="1" aria-selected="false" role="button">1</button></li>
+          <li><button class="btn" id="2" aria-selected="false" role="button">2</button></li>
+          <li><button class="btn" id="3" aria-selected="false" role="button">3</button></li>
+          <li><button class="btn" id="4" aria-selected="false" role="button">4</button></li>
+          <li><button class="btn" id="5" aria-selected="false" role="button">5</button></li>
+        </ul>
 
         <div class="button-wrapper">
           <button class="submit">SUBMIT</button>
@@ -56,29 +57,29 @@
 
       <div class="thank-you">
         <!-- Thank you state start -->
-        <img src="images/illustration-thank-you.svg"" alt="">
+        <img src="images/illustration-thank-you.svg" class="thank-you-image" alt="Thank You Image">
 
-      You selected
-      <!-- Add rating here --> out of 5
+        <p class="user-rating">You selected <span id="score">0</span> out of 5</p>
 
-      Thank you!
+        <h2 class="thank-you-header">Thank you!</h2>
 
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!
+        <p class="thanks-paragraph">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+
     </div>
-  </div>
 
     <!-- Thank you state end -->
   </main>
 
   <footer>
     <div class=" attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://twitter.com/thejackshelton">Jack Shelton</a>.
-      </div>
-      </footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://twitter.com/thejackshelton">Jack Shelton</a>.
+    </div>
+  </footer>
 
-      <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

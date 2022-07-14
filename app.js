@@ -1,19 +1,30 @@
-const buttonRating = document.querySelectorAll('.ratings');
-let ratings = [];
-let lastRating = 0;
+const ratings = document.querySelectorAll('[role="button"]');
+const submitButton = document.querySelector('.submit');
+const ratingContainer = document.querySelector('.rating-menu');
+const thanksContainer = document.querySelector('.thank-you');
+const currentRating = document.getElementById('score');
 
-//Selects each button
-buttonRating.forEach((button) => {
-    button.addEventListener('click', () => {
-        let index = parseInt(button.getAttribute("data-rate"));
-        button.classList.toggle('selected');
-        console.log(index);
-
-
-        ratings.push(index);
+ratings.forEach((rating) => {
+    rating.addEventListener('click', function (e) {
+        let selectedBtn = e.currentTarget;
         for (let i = 0; i < ratings.length; i++) {
-            lastRating = ratings.at(-1);
-            // button.classList.remove('selected')
+            if (ratings[i].getAttribute('aria-selected') == 'true') {
+
+                ratings[i].setAttribute('aria-selected', false);
+                selectedBtn.setAttribute('aria-selected', true);
+                currentRating.textContent = selectedBtn.id;
+
+            } else {
+                selectedBtn.setAttribute('aria-selected', true);
+                currentRating.textContent = selectedBtn.id;
+            }
         }
+
     })
 })
+
+submitButton.addEventListener('click', () => {
+    ratingContainer.style.display = "none";
+    thanksContainer.style.display = "block";
+})
+
