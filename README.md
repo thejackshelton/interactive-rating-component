@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](https://imgur.com/lg3Y76K")
+![Screenshot](https://imgur.com/lg3Y76K)
 
 ### Links
 
@@ -112,8 +112,6 @@ ratings.forEach((rating) => {
 
 I want to be more comfortable with mapping out the logic of a problem. I'd also just like to continue developing with JavaScript and getting a good handle before starting React. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/) - This helped me when looking to understand the focus keyword.
@@ -122,8 +120,6 @@ I want to be more comfortable with mapping out the logic of a problem. I'd also 
 
 - Frontend Mentor - [@thejackshelton](https://www.frontendmentor.io/profile/thejackshelton)
 - Twitter - [@thejackshelton](https://www.twitter.com/thejackshelton)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
