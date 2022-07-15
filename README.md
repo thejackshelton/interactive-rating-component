@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](https://imgur.com/lg3Y76K)
+![https://imgur.com/lg3Y76K](Screenshot)
 
 ### Links
 
