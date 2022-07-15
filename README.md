@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Front End Mentor](https://your-solution-url.com)
+- Solution URL: [Front End Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-rating-component-using-flexbox-and-js-MKtGDSF8i2)
 - Live Site URL: [Live Site](https://thejackshelton.github.io/interactive-rating-component/)
 
 ## My process
@@ -87,6 +87,8 @@ I think I kept my media queries pretty small. So I felt proud of that.
 }
 
 ```
+
+What this does is select the current event target via the aria-selected attribute. Which will update in the span.
 ```js
 ratings.forEach((rating) => {
     rating.addEventListener('click', function (e) {
